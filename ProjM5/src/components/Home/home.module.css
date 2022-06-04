@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+.marginImg{
+    margin: 10px;
+}
+
+.backgroundCard1 {
+    background-color: rgba(182, 179, 179, 0.799);
+    display: flex;
+}
+
+.containerCard1 {
+    width: 100%;
+    
+}
+
+.corTextoAzul {
+    color: rgb(85, 99, 231);
+}
+
+.corTexto {
+    color: white;
+}
+
+.corButtonCard1 {
+    background-color: #0000 !important;
+    border-color: rgb(237, 233, 5);
+}
