@@ -28,17 +28,25 @@ export default () => {
         <body className={style.body}>
             <div className={style.containerCard1}>
                 <div className={style.backgroundCard1}>
-                    <img className={style.marginImg} src={ImgCard1} />
-                    <h3 className={style.corTextoAzul}>Lorem Ipsum</h3>
-                    <p className={style.corTexto}> "Neque porro quisquam est qui dolorem ipsum quia</p>
-                    <p className={style.corTextoAzul}>dolor sit amet, consectetur, adipisci velit ..."</p>
-                    <button className={style.corButtonCard1}>
-                        Loren
-                    </button>
-                    <img class={style.maginImgSalsa} src={ImgCard2} />
+                    <div className={style.Foto1}>
+                        <img src={ImgCard1} />
+                    </div>
+                    <div className={style.txtColuna}>
+                        <div>
+                            <h3 className={style.corTextoAzul}>Lorem Ipsum</h3><br />
+                            <p className={style.corTexto}> "Neque porro quisquam est qui dolorem ipsum</p><br />
+                            <p className={style.corTextoAzul}>quia dolor sit amet, consectetur, adipisci velit ..."</p>
+                            <button className={style.corButtonCard1}>
+                                Loren
+                            </button>
+                        </div>
+                    </div>
+                    <div className={style.Foto2}>
+                        <img class={style.maginImgSalsa} src={ImgCard2} />
+                    </div>
                 </div>
             </div>
-            <div className={style.centralizaTexto} >
+            <div className={style.containerDiv2} >
                 <h1 className={style.corTexto}>
                     Restaurantes 5 estrelas
                 </h1>
@@ -118,46 +126,46 @@ export default () => {
                         <h1>
                             Asian Food
                         </h1>
-                        <img src={ImgCard10} className={style.tamanhoPadraoImg}/>
+                        <img src={ImgCard10} className={style.tamanhoPadraoImg} />
                     </div>
                     <div>
                         <h1>
                             Italian Food
                         </h1>
-                        <img src={ImgCard11} className={style.tamanhoPadraoImg}/>
+                        <img src={ImgCard11} className={style.tamanhoPadraoImg} />
                     </div>
                     <div>
                         <h1>
                             Mexican Food
                         </h1>
-                        <img src={ImgCard12} className={style.tamanhoPadraoImg}/>
+                        <img src={ImgCard12} className={style.tamanhoPadraoImg} />
                     </div>
                     <div>
                         <h1>
                             Arabian Food
                         </h1>
-                        <img src={ImgCard13} className={style.tamanhoPadraoImg}/>
+                        <img src={ImgCard13} className={style.tamanhoPadraoImg} />
                     </div>
                     <div>
                         <h1>
                             Thai food
                         </h1>
-                        <img src={ImgCard14} className={style.tamanhoPadraoImg}/>
+                        <img src={ImgCard14} className={style.tamanhoPadraoImg} />
                     </div>
                     <div>
-                        <h1> 
+                        <h1>
                             Brazilian Food
                         </h1>
-                        <img src={ImgCard15} className={style.tamanhoPadraoImg}/>
-                    </div>
-                    <div className={style.centralizaTexto}>
-                        <h1>
-                        e muitas outras...
-                        </h1>
+                        <img src={ImgCard15} className={style.tamanhoPadraoImg} />
                     </div>
                 </div>
+                <div className={style.posicaoTxt}>
+                        <h1>
+                            e muitas outras...
+                        </h1>
+                    </div>
                 <div>
-                <img src={ImgCard16} className={style.tamanhoPadraoImg}/>
+                    <img src={ImgCard16} className={style.tamanhoPadraoImg} />
                 </div>
             </div>
         </body>

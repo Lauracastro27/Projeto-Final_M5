@@ -1,10 +1,38 @@
 body{
     background-color: black;
 }
+
+.txtColuna{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+text-align: start;
+justify-content: center;
+margin: 180px;
+font-size: 20px;
+}
+
 .maginImgSalsa{
     margin: 10px;
     width: 200px;
     height: 200px;
+}
+.Foto1{
+    margin-top: 80px;
+    margin-left: 20px; 
+    margin-right: 10px;
+}
+.Foto2{
+    margin-top: 200px;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: end;
+}
+
+.containerDiv2{
+    text-align: center;
+    margin-top: 90px;
 }
 
 .marginImg{
@@ -16,6 +44,9 @@ body{
     background-image: url("../../assents/img/background.png");
     display: flex;
     flex-direction: row;
+    align-items: center!important;
+    width: 100%;
+    height: 280px;
 }
 
 .containerCard1 {
@@ -36,11 +67,12 @@ text-align: center;
 }
 
 .corButtonCard1 {
-    background-color: #0000 !important;
+    background-color: #0000!important;
     border-color: rgb(237, 233, 5);
     color: white;
     justify-content: center;
     align-items: center;
+    margin: 50px;
     border-radius: 10px;
     width: 100px;
     height: 50px;
@@ -98,6 +130,7 @@ display: flex;
 flex-wrap: wrap;
 color: black;
 margin-top: 20px;
+width: 100%;
 }
 
 .tamanhoPadraoImg{ 
@@ -105,3 +138,29 @@ margin-top: 20px;
     height: 200px;
     margin: 20px;
 }
+
+.posicaoTxt{
+    background-color: rgb(255, 251, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .bory {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+@media screen and (max-width: 768px) {
+    .bory {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+  }
