@@ -6,7 +6,7 @@ body{
 }
 
 .backgroundCard1 {
-    background-color: rgba(182, 179, 179, 0.799);
+    background-image: url("../../assents/img/background.png");
     display: flex;
 }
 
