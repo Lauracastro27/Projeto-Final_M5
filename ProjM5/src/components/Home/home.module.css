@@ -1,9 +1,15 @@
 body{
     background-color: black;
 }
-.marginImg{
+.maginImgSalsa{
     margin: 10px;
-    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+
+.marginImg{
+    margin: 26px;
+    background-color: rgb(27, 45, 213);;
 }
 
 .backgroundCard1 {
@@ -18,7 +24,7 @@ body{
 }
 
 .corTextoAzul {
-    color: rgb(85, 99, 231);
+    color: rgb(27, 45, 213);
 }
 
 .centralizaTexto{
@@ -32,6 +38,12 @@ text-align: center;
 .corButtonCard1 {
     background-color: #0000 !important;
     border-color: rgb(237, 233, 5);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
 }
 
 .BackgroudDiv2{
@@ -42,4 +54,54 @@ text-align: center;
 .tamanhoImg{
     width: 290px;
     height: 200px;
+}
+
+.marginImgTop{
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.bgImgTop{
+    background-image: url("../../assents/img/background.png");
+}
+
+.tamanhoEstrela{
+width: 25%;
+height: 25%; 
+margin: 0;
+flex-direction: row;
+}
+
+.bgWhite{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloSublinhado{
+    text-decoration: underline;
+    color: white;
+}
+
+.cardEscolha{
+background-color: rgb(255, 251, 1);
+display: flex;
+flex-wrap: wrap;
+color: black;
+margin-top: 20px;
+}
+
+.tamanhoPadraoImg{ 
+    width: 400px;
+    height: 200px;
+    margin: 20px;
 }
