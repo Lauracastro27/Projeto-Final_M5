@@ -160,12 +160,9 @@ export default () => {
                     </div>
                 </div>
                 <div className={style.posicaoTxt}>
-                        <h1>
-                            e muitas outras...
-                        </h1>
-                    </div>
-                <div>
-                    <img src={ImgCard16} className={style.tamanhoPadraoImg} />
+                    <h1>
+                        e muitas outras...
+                    </h1>
                 </div>
             </div>
         </body>
