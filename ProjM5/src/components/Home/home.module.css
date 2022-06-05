@@ -64,6 +64,11 @@ body {
     text-align: center;
 }
 
+.centralizaTexto2 {
+    margin-bottom: 150px;
+    text-align: center;
+}
+
 .corTexto {
     color: white;
 }
@@ -86,6 +91,7 @@ body {
 }
 
 .tamanhoImg {
+    margin-top: 5px;
     width: 290px;
     height: 200px;
 }
@@ -96,7 +102,15 @@ body {
 }
 
 .bgImgTop {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
     background-image: url("../../assents/img/background.png");
+} 
+
+.marginImgTop2 {
+    margin: -100px;
+    border-radius: 40px;
 }
 
 .tamanhoEstrela {
@@ -107,6 +121,7 @@ body {
 }
 
 .bgWhite {
+    margin-top: 200px;
     background-color: white;
     display: flex;
     flex-direction: row;

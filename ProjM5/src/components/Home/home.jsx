@@ -52,13 +52,13 @@ export default () => {
                 </h1>
                 <div className={style.BackgroudDiv2}>
                     <card className={style.marginImg}>
-                        <img src={ImgCard3} />
+                        <img className={style.tamanhoImg} src={ImgCard3} />
                         <h4>Donmie Churros Gourmet</h4>
                         <p>Churros Gourmet</p>
                         <p><img class={style.tamanhoEstrela} src={ImgCard6} />268 Avaliações</p>
                     </card>
                     <card className={style.marginImg}>
-                        <img src={ImgCard4} />
+                        <img className={style.tamanhoImg} src={ImgCard4} />
                         <h4>Royale Burguer</h4>
                         <p>Hamburgueria</p>
                         <p><img class={style.tamanhoEstrela} src={ImgCard6} />1.532 Avaliações</p>
@@ -71,13 +71,15 @@ export default () => {
                     </card>
                 </div>
             </div>
-            <div className={style.centralizaTexto} >
+            <div className={style.centralizaTexto2} >
                 <h1 className={style.corTexto}>
                     Os Melhores restaurantes para você!
                 </h1>
-                <div className={style.bgImgTop}>
-                </div>
-                <img src={ImgCard7} className={style.marginImgTop} />
+            </div>
+            <div className={style.centralizaTexto}>
+            <div className={style.bgImgTop}>
+                <img src={ImgCard7} className={style.marginImgTop2} />
+            </div>
             </div>
             <div class={style.bgWhite}>
                 <p>Cras orci leo, placerat ac varius et,<br />
