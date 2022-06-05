@@ -13,6 +13,7 @@ export default () => {
           <li>Cadastre-se</li>
           <li>Contate-nos</li>
           <li>Sobre</li>
+          <li>Login</li>
         </ul>
       </nav>
     </header>
