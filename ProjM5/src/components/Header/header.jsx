@@ -12,7 +12,7 @@ export default () => {
         <div className={style.menus}>
         <a>Cadastre-se</a>
             <div>
-              <select required value="Cadastre-se" class="inputCadastre-se">
+              <select required value="Cadastre-se" className={style.inputCelect}>
                 <option>-----</option>
                 <option>Pedido</option>
                 <option>Estabelicimento</option>
