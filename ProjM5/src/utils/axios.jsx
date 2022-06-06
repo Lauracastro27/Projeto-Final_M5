@@ -7,10 +7,18 @@ const api = axios.create({
 
 export default api;
 
-export const createSession = async (email, senha) =>{
-  return api.post("clientes", {email, senha});
+export const createSession = async (email) =>{
+  
+  return await api.get(`clientes/email/${email}`);
+  
 }
 
 export const getUsers = async ()=>{
   return api.get('clientes');
 }
+
+//1 - get nos cliente
+//2- verificar o email do cliente - usando o find
+//caso nao tenha retorna um erro
+//guardar cliente em uma variavel
+//comparar senha do cliente guardado com a senha do input
