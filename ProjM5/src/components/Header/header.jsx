@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assents/img/logo.png"
+import Logo from "../../assents/img/logo.png";
 import style from "../Header/header.module.css";
 
 export default () => {
@@ -9,21 +9,21 @@ export default () => {
         <div className={style.logo}>
           <img src={Logo} className={style.logoimg} />
         </div>
-        <ul className={style.menus}>
-          <li>
+        <div className={style.menus}>
+        <a>Cadastre-se</a>
             <div>
-              <select required value="Cadastre-se">
-                <option>---</option>
+              <select required value="Cadastre-se" className={style.inputCelect}>
+                <option>-----</option>
                 <option>Pedido</option>
                 <option>Estabelicimento</option>
                 <option>Entragadores</option>
                 <option>Cliente</option>
                 <option>Produto</option>
               </select>
-            </div></li>
-          <li>Contate-nos</li>
-          <li>Sobre</li>
-        </ul>
+            </div>
+          <a>Contate-nos</a>
+          <a>Sobre</a>
+        </div>
       </nav>
     </header>
   );

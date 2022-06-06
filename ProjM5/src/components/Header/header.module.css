@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header{
   background-color: black;
 }
@@ -29,4 +34,11 @@
 .logoimg{
  height: 4em;
  width: 4em;
+}
+
+.inputCelect{
+  width: 20px;
+  background-color: black;
+  color: white;
+  border: none;
 }

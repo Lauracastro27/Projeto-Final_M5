@@ -1,10 +1,10 @@
-.header{
+/* .header{
   background-color: black;
 }
 .navbar {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr; /* only column intially */
+  grid-template-columns: 1fr; /* only column intially 
   grid-auto-flow:dense;
   justify-items: stretch;
   align-items: stretch;
@@ -13,7 +13,7 @@
 .logo {
   
   width: 60px;
-  grid-column:-3; /* create an implicit one at the beginning */
+  grid-column:-3; /* create an implicit one at the beginning 
 }
 .menus {
   display: flex;
@@ -29,4 +29,4 @@
 .logoimg{
  height: 4em;
  width: 4em;
-}
+} */
