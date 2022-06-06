@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assents/img/logo.png";
+import Logo from "../../assents/img/logo.png"
 import style from "../Header/header.module.css";
 
 export default () => {
