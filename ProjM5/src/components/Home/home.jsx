@@ -15,13 +15,7 @@ import ImgCard12 from "../../assents/img/Mexican_Food.jpg"
 import ImgCard13 from "../../assents/img/Arabian_Food.jpg"
 import ImgCard14 from "../../assents/img/Thai_Food.jpg"
 import ImgCard15 from "../../assents/img/Brazilian_Food.jpg"
-import ImgCard16 from "../../assents/img/comida-online-como-pedir.jpg"
-
-
-
-
-
-
+// import Sobre from './components/Sobre/sobre'
 
 export default () => {
     return (
@@ -33,12 +27,10 @@ export default () => {
                     </div>
                     <div className={style.txtColuna}>
                         <div>
-                            <h3 className={style.corTextoAzul}>Lorem Ipsum</h3><br />
-                            <p className={style.corTexto}> "Neque porro quisquam est qui dolorem ipsum</p><br />
-                            <p className={style.corTextoAzul}>quia dolor sit amet, consectetur, adipisci velit ..."</p>
-                            <button className={style.corButtonCard1}>
-                                Loren
-                            </button>
+                            <p className={style.corTexto}> "Gastronomia é a arte de usar comida <br />
+                            para criar felicidade."</p><br />
+                            <p className={style.corTextoAzul}>"A cozinha é multi-sensorial..."</p>
+                        
                         </div>
                     </div>
                     <div className={style.Foto2}>
@@ -82,30 +74,30 @@ export default () => {
             </div>
             </div>
             <div class={style.bgWhite}>
-                <p>Cras orci leo, placerat ac varius et,<br />
-                    maximus nec ipsum. Donec eu<br />
-                    vehicula massa. Curabitur nec est<br />
-                    non justo rhoncus euismod.<br />
-                    Maecenas nec blandit ligula, ut<br />
-                    venenatis tellus. Aliquam eleifend<br />
-                    viverra purus quis commodo.<br />
-                    Integer sodales, eros et facilisis .</p>
+                <p>Theodore Zeldin não era um cozinheiro,<br />
+                    mas um historiador e filósofo inglês <br />
+                    que achava que, para ser feliz e ter <br />
+                    confiança em si mesmo, era preciso <br />
+                    comer bem, saborear, provar e degustar <br />
+                    pratos de prestígio e delicados. <br />
+                    Premissa essa bem interessante, <br />
+                    não? A culinária se direciona ao olho, à boca,<br />
+                    ao nariz, ao ouvido, a todos os sentidos <br />
+                    e ao espírito. Nenhuma arte tem essa complexidade."<br />
+                    Vamos continuar nas citações francesas, afinal, <br />
+                    o país tem uma excelente reputação para a cozinha!<br /></p>
                 <img src={ImgCard8} className={style.marginImgTop} />
-                <p>
-                    Lorem ipsum dolor sit amet, <br />
-                    consectetur adipiscing elit. Nulla<br />
-                    viverra mi nec ligula eleifend<br />
-                    hendrerit. Vestibulum pretium velit<br />
-                    magna, at efficitur metus ultrices<br />
-                    eu. Nulla facilisi. Aenean ut lacus<br />
-                    ac lacus condimentum consequat<br />
-                    vel nec nunc. In dapibus, libero<br />
-                    congue lacinia pretium, urna ligula<br />
-                    euismod metus, in volutpat felis<br />
-                    massa id velit. Nunc et libero<br />
-                    molestie, placerat neque vitae,<br />
-                    sagittis metus. Quisque et turpis et<br />
-                    risus maximus vestibulum.
+                <p> 
+                    Para ilustrar o apelo às emoções que vimos anteriormente,<br />
+                    Pierre Gagnaire, grande chef francês, explica que <br />
+                    cozinhar é atraente para todos os sentidos de um ser humano.<br />
+                    E trata-se de uma experiência completamente sinestésica, <br />
+                    envolvente de todos os nossos sentidos.<br />
+                    Seja você um cozinheiro ou um consumidor, é importante <br />
+                    pensar em usar toda a gama que temos à nossa disposição <br />
+                    para produzir ou consumir uma obra-prima. Porque, como <br />
+                    sabemos, um prato é julgado pelo menos por sua aparência,<br />
+                    seu cheiro e seu sabor.<br />
                 </p>
             </div>
             <div className={style.centralizaTexto}>
@@ -114,9 +106,6 @@ export default () => {
                 </h1>
                 <div className={style.flexRow}>
                     <img src={ImgCard9} className={style.marginImgTop} />
-                    <button class={style.corButtonCard1}>
-                        Inpsun
-                    </button>
                 </div>
             </div>
             <div className={style.centralizaTexto}>
@@ -150,7 +139,7 @@ export default () => {
                     </div>
                     <div>
                         <h1>
-                            Thai food
+                            Thai Food
                         </h1>
                         <img src={ImgCard14} className={style.tamanhoPadraoImg} />
                     </div>

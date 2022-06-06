@@ -3,14 +3,25 @@ import style from "../Sobre/sobre.module.css";
 
 export default () => {
     return (
-        <body>
+        <body className={style.fundo}>
             <div>
-                <h1 className={style.corTitulo}>
-                    Sobre
-                </h1>
-                <p>
-                    Hello word
-                </p>
+            <br /><h1 className={style.corTitulo}>
+                    Sobre 
+                </h1><br />
+                <br />
+                <p className={style.Txt}>
+                Tô com fome é uma empresa que aproxima clientes, 
+                restaurantes e entregadores de forma simples e prática.<br /> 
+                Entre seus valores estão a facilidade, privacidade e 
+                respeito com os usuários e parceiros. <br />
+                E para proporcionar uma experiência incrível a cada um deles, nossa entrega 
+                vai muito além do delivery.<br />
+                A missão do Tô com Fome é ser a melhor plataforma
+                de delivery da América Latina, dando ao consumidor <br />
+                mais  opções e agilidade na hora de pedir comida. <br />
+                </p><br />
+                <br />
+                <br />
             </div>
         </body>
     );

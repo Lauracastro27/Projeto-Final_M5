@@ -13,6 +13,7 @@
 }
 
 .colorText {
+    font-family: 'Italiana', serif;
     color: black;
     display: flex;
     align-items: center;

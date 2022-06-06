@@ -1,3 +1,19 @@
+.fundo {
+    background-color: black;
+}
 .corTitulo {
+    font-family: 'Italiana', serif;
+    color: #5ea8cd;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Txt {
+    font-family: 'Syne', sans-serif;
     color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

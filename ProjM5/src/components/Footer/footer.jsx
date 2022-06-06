@@ -9,7 +9,7 @@ export default () => {
                 <div className={style.logo}>
                     <img src={Logo} className={style.logoimg} />
                     <h1 className={style.colorText}>
-                        Projeto criado por GrupoI
+                        Projeto criado por Grupo I
                     </h1>
                 </div>
             </div>
