@@ -1,0 +1,21 @@
+.logo {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rowFlex {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #8BB2FB;
+}
+
+.colorText {
+    font-family: 'Italiana', serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
