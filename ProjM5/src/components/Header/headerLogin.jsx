@@ -1,10 +1,14 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import Logo from "../../assents/img/logo.png";
-import style from "../Header/header.module.css"
+import style from "../Header/header.module.css";
+import { AuthContext } from "../../context/Auth";
 
-export default () => { 
+export default () => {
+  const { logout } = useContext(AuthContext);
+  const handleLogout = () => {
+    logout();
+  };
   return (
-    
     <header className={style.header}>
       <nav className={style.navbar}>
         <div className={style.logo}>
@@ -24,7 +28,7 @@ export default () => {
           </div>
           <a>Contate-nos</a>
           <a>Sobre</a>
-          <a>Login</a>
+          <a onClick={handleLogout}>Sair</a>
         </div>
       </nav>
     </header>

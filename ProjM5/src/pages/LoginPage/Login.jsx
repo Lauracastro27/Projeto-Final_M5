@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react'
-import Header from '../../components/Header/header'
+import HeaderLogin from '../../components/Header/headerLogin'
 import api from "../../utils/axios"
 import './style.css'
 import { AuthContext } from '../../context/Auth'
@@ -20,19 +20,14 @@ function LoginPage() {
   }
 
   return (
+    <section>
+    <HeaderLogin />
     <main>
-    <Header />
     <div id="login">
-
-  
-
-       
-
       <form className="form" onSubmit={handleSubmit}>
         <div className="container">
         <div className="brand-title">Login</div>
         <div className="inputs">
-
                <label htmlFor="email">
                   Email
                </label>
@@ -40,9 +35,6 @@ function LoginPage() {
                 name="email"
                 id="email" 
                 onChange={(e)=> setEmail(e.target.value)}/>
-            
-
-         
                <label htmlFor="password">
                  Senha
                </label>
@@ -51,8 +43,6 @@ function LoginPage() {
             name="password" 
             id="password"
             onChange={(e)=> setSenha(e.target.value)}/>
-          
-         
           </div>
             <div className="actions">
               <button className='bt1' type="submit">Entrar</button>
@@ -60,9 +50,9 @@ function LoginPage() {
             </div>
         </form>
     </div>
-
     </main>
-  )
+    </section>
+  );
 }
 
 export default LoginPage;
