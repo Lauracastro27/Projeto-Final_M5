@@ -4,35 +4,35 @@ import api from "../../utils/axios"
 import './style.css'
 import { AuthContext } from '../../context/Auth'
 
-function LoginPage() {
+function CadastroPage() {
 
-  const {login, user} = useContext(AuthContext);
+//   const {login, user} = useContext(AuthContext);
   
-  console.log(user);
-  const [email, setEmail] = useState("");
-  const [senha, setSenha] = useState("");
+//   console.log(user);
+//   const [email, setEmail] = useState("");
+//   const [senha, setSenha] = useState("");
 
-  const handleSubmit = async (e) =>{
-    e.preventDefault();
-    console.log('submit', {email, senha})
-   // console.log(( await api.get(`clientes/email/${email}`)).data)
+//   const handleSubmit = async (e) =>{
+//     e.preventDefault();
+//     console.log('submit', {email, senha})
+//    // console.log(( await api.get(`clientes/email/${email}`)).data)
     
-   await login(email, senha);//Integracao com o contexto e api
-  }
+//    await login(email, senha);//Integracao com o contexto e api
+//   }
 
   return (
     <main>
     <Header />
+
     <div id="login">
 
-      <h1 className="title"> Login</h1>
+      <h1 className="title"> Cadastre-se </h1>
 
        
-
         <form className="form" onSubmit={handleSubmit}>
             <div className="field">
                <label htmlFor="email">
-                  Email
+                  
                </label>
                <input type="email" 
                 name="email"
@@ -64,4 +64,4 @@ function LoginPage() {
   )
 }
 
-export default LoginPage
+export default CadastroPage;

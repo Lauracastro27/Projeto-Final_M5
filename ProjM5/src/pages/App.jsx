@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import Header from '../components/header'
+import Header from '../components/Header/header'
 import "../assents/index.css"
 import "../assents/App.css"
 import {AuthContext} from '../context/Auth'

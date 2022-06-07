@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 const api = axios.create({
-  baseURL: "https://morning-scrubland-18153.herokuapp.com/",
+  baseURL: "https://morning-dusk-84596.herokuapp.com",
 });
 
 export default api;
@@ -15,6 +15,11 @@ export const createSession = async (email) =>{
 
 export const getUsers = async ()=>{
   return api.get('clientes');
+}
+
+export const createUser = async ()=>{
+  return await api.post('clientes')
+
 }
 
 //1 - get nos cliente
