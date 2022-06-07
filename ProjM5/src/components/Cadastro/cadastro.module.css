@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Syne&display=swap');
+
+.fundo {
+    background-color: black;
+}
+
+.cadastro {
+    font-family: 'Italiana', serif;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+label {
+    color: white;
+}
+
+input {
+    border-radius: 8px;
+    width: 310px;
+    height: 30px;
+    font-size: 15px;
+}
+
+button {
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Syne', sans-serif;
+    margin: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8BB2FB;
+    color: #8BB2FB;
+}
+
+button:hover{
+color: white;
+background-color: #8BB2FB;
+}
+.alinhamentoButton {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
