@@ -5,11 +5,7 @@ import './style.css'
 import { AuthContext } from '../../context/Auth'
 
 function LoginPage() {
-  // useEffect(() => {
-  //   return () => {
-  //     effect
-  //   };
-  // }, [input]);
+ 
   const {login} = useContext(AuthContext);
   
   
@@ -19,8 +15,7 @@ function LoginPage() {
   const handleSubmit = async (e) =>{
     e.preventDefault();
     console.log('submit', {email, senha})
-   // console.log(( await api.get(`clientes/email/${email}`)).data)
-    
+ 
    await login(email, senha);//Integracao com o contexto e api
   }
 
@@ -34,8 +29,8 @@ function LoginPage() {
        
 
       <form className="form" onSubmit={handleSubmit}>
-        <div classNameNameName="container">
-        <div class="brand-title">Login</div>
+        <div className="container">
+        <div className="brand-title">Login</div>
         <div className="inputs">
 
                <label htmlFor="email">
