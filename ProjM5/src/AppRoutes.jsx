@@ -3,6 +3,7 @@ import App from "./pages/App"
 import Login from "./pages/LoginPage/Login"
 import { AuthProvider, AuthContext } from "./context/Auth";
 import React, { Children, useContext } from "react";
+import Home from "./components/Home/home"
  
 
 const AppRoutes = () =>{
@@ -26,7 +27,7 @@ const AppRoutes = () =>{
         <BrowserRouter>
         <AuthProvider>
             <Routes>
-                <Route path="/" element={<Private><App/></Private>}/>
+                <Route path="/" element={<Private><Home/></Private>}/>
                 <Route path="/Login" element={<Login/>}/>
             </Routes> 
             </AuthProvider>
