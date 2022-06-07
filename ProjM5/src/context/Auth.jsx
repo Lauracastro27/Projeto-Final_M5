@@ -1,14 +1,14 @@
 import React, {useState, useEffect, createContext} from 'react'
 import { useNavigate } from 'react-router-dom';
-import { createSession, createUser} from "../utils/axios"
-export const AuthContext = createContext();
+import { createSession, createUser, createProduct} from "../utils/axios"
+export const AuthContext = createContext('');
 
 
 export const AuthProvider = ({children}) =>{
 
     const navigate = useNavigate();
 
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState('');
 
     const [loading, setLoading] = useState(true);
 
@@ -34,8 +34,8 @@ export const AuthProvider = ({children}) =>{
        
         console.log('login auth', usuario.data);
        
-        const senhaUsuario = await usuario.data.Senha
-        await console.log(senhaUsuario)
+        const senhaUsuario = usuario.data.Senha
+        console.log(senhaUsuario)
 
         if(senhaUsuario === senha){
             const loggedUser = usuario.data.Email;
@@ -58,12 +58,22 @@ export const AuthProvider = ({children}) =>{
 
         
     }
-    const cadastro = async(email, senha, nome, idade, endereco, favorito)=>{
-        const novoUsuario = createUser(email, senha, nome, idade, endereco, favorito)
-        console.log(novoUsuario);
 
+    const cadastro = async(email, senha, nome, idade, endereco, favorito)=>{
+        const novoUsuario = await createUser(email, senha, nome, idade, endereco, favorito)
+        console.log(novoUsuario);
+        if(email && senha){
+            await login(email, senha)
+        }
         //Implementar a função de adicionar o usuario aqui
     }
+
+    const novoProduto = async(nome, marca, preco, validade, ingredientes, qtd)=>{
+        const produto = await createProduct(nome, marca, preco, validade, ingredientes, qtd)
+        console.log(produto);
+        
+    }
+
     const logout = ()=>{
         console.log("logout");
         localStorage.removeItem('user')
@@ -74,7 +84,7 @@ export const AuthProvider = ({children}) =>{
 
     return(
         <AuthContext.Provider 
-        value={{authenticate: !!user, user, login, loading, logout}}>
+        value={{authenticate: !!user, user, login, cadastro, novoProduto, loading, logout}}>
         {children}
         </AuthContext.Provider>    
     )

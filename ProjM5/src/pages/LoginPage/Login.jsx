@@ -5,10 +5,14 @@ import './style.css'
 import { AuthContext } from '../../context/Auth'
 
 function LoginPage() {
-
-  const {login, user} = useContext(AuthContext);
+  // useEffect(() => {
+  //   return () => {
+  //     effect
+  //   };
+  // }, [input]);
+  const {login} = useContext(AuthContext);
   
-  console.log(user);
+  
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
@@ -37,7 +41,6 @@ function LoginPage() {
                <input type="email" 
                 name="email"
                 id="email" 
-                value={email} 
                 onChange={(e)=> setEmail(e.target.value)}/>
              </div>
 
@@ -49,7 +52,6 @@ function LoginPage() {
             type="password" 
             name="password" 
             id="password"
-            value={senha}
             onChange={(e)=> setSenha(e.target.value)}/>
           </div> 
 
@@ -64,4 +66,4 @@ function LoginPage() {
   )
 }
 
-export default LoginPage
+export default LoginPage;
