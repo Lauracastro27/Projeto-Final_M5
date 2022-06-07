@@ -24,12 +24,10 @@ function LoginPage() {
     <Header />
     <div id="login">
 
-
       <form className="form" onSubmit={handleSubmit}>
-        <div className="container">
-        <div className="brand-title">Login</div>
+        <div classNameNameName="container">
+        <div class="brand-title">Login</div>
         <div className="inputs">
-
 
                <label htmlFor="email">
                   Email
@@ -38,9 +36,9 @@ function LoginPage() {
                 name="email"
                 id="email" 
                 onChange={(e)=> setEmail(e.target.value)}/>
-             </div>
+            
 
-          <div className="field">
+         
                <label htmlFor="password">
                  Senha
                </label>
@@ -49,12 +47,13 @@ function LoginPage() {
             name="password" 
             id="password"
             onChange={(e)=> setSenha(e.target.value)}/>
-          </div> 
-
+          
+         
+          </div>
             <div className="actions">
-              <button type="submit">Entrar</button>
+              <button className='bt1' type="submit">Entrar</button>
             </div>
-    </div>
+            </div>
         </form>
     </div>
 
