@@ -2,10 +2,13 @@ import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import Home from './components/Home/home'
 import Login from "./pages/LoginPage/Login"
 import { AuthProvider, AuthContext } from "./context/Auth";
+
+
 import React, {useContext } from "react";
 import Cadastro from './pages/CadastroPage/CadastroPage'
 import UsuarioPage from './pages/Registro/UsuarioPage'
 import Produtos from './pages/Usuario/Produtos';
+
 
 const AppRoutes = () =>{
    
