@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react'
-import Header from '../../components/header'
+import Header from '../../components/Header/header'
 import api from "../../utils/axios"
 import './style.css'
 import { AuthContext } from '../../context/Auth'

@@ -1,9 +1,10 @@
 import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import App from "./pages/App"
+import Home from './components/Home/home'
 import Login from "./pages/LoginPage/Login"
 import { AuthProvider, AuthContext } from "./context/Auth";
 import React, { Children, useContext } from "react";
- 
+import Cadastro from './pages/CadastroPage/CadastroPage'
 
 const AppRoutes = () =>{
    
@@ -26,8 +27,9 @@ const AppRoutes = () =>{
         <BrowserRouter>
         <AuthProvider>
             <Routes>
-                <Route path="/" element={<Private><App/></Private>}/>
+                <Route path="/" element={<Private><Home/></Private>}/>
                 <Route path="/Login" element={<Login/>}/>
+                <Route path="/Cadastro" element={<Cadastro/>}/>
             </Routes> 
             </AuthProvider>
             

@@ -1,6 +1,6 @@
 import React, {useState, useEffect, createContext} from 'react'
 import { useNavigate } from 'react-router-dom';
-import { createSession} from "../utils/axios"
+import { createSession, createUser} from "../utils/axios"
 export const AuthContext = createContext();
 
 
@@ -58,7 +58,12 @@ export const AuthProvider = ({children}) =>{
 
         
     }
+    const cadastro = async(email, senha, nome, idade, endereco, favorito)=>{
+        const novoUsuario = createUser(email, senha, nome, idade, endereco, favorito)
+        console.log(novoUsuario);
 
+        //Implementar a função de adicionar o usuario aqui
+    }
     const logout = ()=>{
         console.log("logout");
         localStorage.removeItem('user')
