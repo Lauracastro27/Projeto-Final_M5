@@ -1,32 +1,56 @@
+<<<<<<< Updated upstream
 .header{
+=======
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+>>>>>>> Stashed changes
   background-color: black;
 }
+
 .navbar {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr; /* only column intially */
-  grid-auto-flow:dense;
+  grid-auto-flow: dense;
   justify-items: stretch;
   align-items: stretch;
   column-gap: 20px;
 }
+
 .logo {
-  
   width: 60px;
-  grid-column:-3; /* create an implicit one at the beginning */
+  grid-column: -3; /* create an implicit one at the beginning */
 }
+
 .menus {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  grid-column: 1; 
+  grid-column: 1;
   font-size: 20px;
   align-items: center;
   color: silver;
   column-gap: 20px;
 }
 
+<<<<<<< Updated upstream
 .logoimg{
  height: 4em;
  width: 4em;
+=======
+.logoimg {
+  height: 4em;
+  width: 4em;
+}
+
+.inputSelect {
+  width: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+>>>>>>> Stashed changes
 }

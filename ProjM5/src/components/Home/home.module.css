@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+body {
+    background-color: black;
+}
+.containerCard1 {
+    width: 100%;
+}
+.backgroundCard1 {
+    background-image: url("../../assents/img/background.png");
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    width: 100%;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.Foto1 {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.txtColuna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: center;
+    margin: 180px;
+    font-size: 20px;
+}
+.corTexto {
+    color: white;
+    font-family: 'Italiana', serif;
+}
+.corTextoAzul {
+    color: #5ea8cd;
+    font-family: 'Syne', sans-serif;
+}
+.Foto2 {
+    margin-top: 200px;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: end;
+}
+.maginImgSalsa {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+.containerDiv2 {
+    text-align: center;
+    margin-top: 90px;
+}
+.BackgroudDiv2 {
+    display: flex;
+    flex-direction: row;
+}
+.marginImg {
+    font-family: 'Syne', sans-serif;
+    margin: 26px;
+    background-color: #5ea8cd;
+}
+.tamanhoImg {
+    margin-top: 5px;
+    width: 290px;
+    height: 200px;
+    
+}
+.tamanhoEstrela {
+    font-family: 'Syne', sans-serif;
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    flex-direction: row;
+}
+.centralizaTexto2 {
+    margin-bottom: 150px;
+    text-align: center;
+}
+.centralizaTexto {
+    text-align: center;
+}
+.bgImgTop {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../../assents/img/background.png");
+}
+.marginImgTop2 {
+    margin: -100px;
+    border-radius: 40px;
+}
+.bgWhite {
+    font-family: 'Syne', sans-serif;
+    margin-top: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tituloSublinhado {
+    font-family: 'Italiana', serif;
+    text-decoration: underline;
+    color: white;
+}
+.cardEscolha {
+    font-family: 'Syne', sans-serif;
+    background-color:  #ffd000;
+    color: black;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tamanhoPadraoImg {
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+}
+.corButtonCard1 {
+    background-color: #0000 !important;
+    border-color: #ffd000;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
+.marginImgTop {
+    margin: 20px;
+    border-radius: 40px;
+}
+.posicaoTxt {
+    font-family: 'Syne', sans-serif;
+    background-color:  #ffd000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .bory {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bory {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
