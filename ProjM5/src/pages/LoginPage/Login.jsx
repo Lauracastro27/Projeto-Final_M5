@@ -1,22 +1,23 @@
 import { useState, useContext } from 'react'
 import Header from '../../components/header'
-//import api from "../../utils/axios"
+import api from "../../utils/axios"
 import './style.css'
 import { AuthContext } from '../../context/Auth'
 
 function LoginPage() {
 
-  const {authenticate, login} = useContext(AuthContext);
-
-
+  const {login, user} = useContext(AuthContext);
+  
+  console.log(user);
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
-  const handleSubmit = (e) =>{
+  const handleSubmit = async (e) =>{
     e.preventDefault();
     console.log('submit', {email, senha})
-
-    login(email, senha);//Integracao com o contextom e api
+   // console.log(( await api.get(`clientes/email/${email}`)).data)
+    
+   await login(email, senha);//Integracao com o contexto e api
   }
 
   return (

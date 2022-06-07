@@ -15,25 +15,39 @@ export const AuthProvider = ({children}) =>{
     useEffect(()=>{
        const recoveredUser = localStorage.getItem('user');
       
-       if(recoveredUser){
-           setUser(JSON.parse(recoveredUser));
-           api.defaults.headers.Authorization = `User ${user}`;
+       if(recoveredUser != undefined){
+           setUser(recoveredUser);
        }
+    console.log(recoveredUser);
+    
        setLoading(false);
     },[])
+
+
+  
+
 
     const login = async (email, senha)=>{
 
         
-        const response = await createSession(email, senha)
+        const usuario = await createSession(email, senha)
+       
+        console.log('login auth', usuario.data);
+       
+        const senhaUsuario = await usuario.data.Senha
+        await console.log(senhaUsuario)
 
-        console.log('login auth', response.data);
+        if(senhaUsuario === senha){
+            const loggedUser = usuario.data.Email;
+            localStorage.setItem('user', loggedUser);
+        }else{
+            return alert('Senha errada')
+        }
+
+        const loggedUser = usuario;
 
 
-        const loggedUser = response.data.user;
-
-
-        localStorage.setItem('user', JSON.stringify(loggedUser));
+        // localStorage.setItem('user', loggedUser);
         
        // api.defaults.headers.Authorization = `Bearer ${token}`;
 

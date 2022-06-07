@@ -29,7 +29,6 @@ function App() {
     <div>
       
       <Header />
-      <p>{String(authenticate)}</p>
       <button onClick={handleLogout}>Sair</button>
       <ul>
         {users.map((user)=>(
