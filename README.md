@@ -3,13 +3,7 @@
 
 ## Descrição
 
-Tudo que você precisa na hora fome em um só lugar! Com o APP TôComFome desenvolvido pelo Grupo 01 da Turma15 da RESILIA Educação você consegue realizar um cadastro ou selecionar qualquer item nas seguintes categorias:
-
-* [ESTABELECIMENTO]
-* [PRODUTO]
-* [CLIENTE]
-* [PEDIDO]
-* [ENTREGADOR]
+Tudo que você precisa na hora fome em um só lugar! Conheça o APP TôComFome desenvolvido pelo **Grupo 01** da **Turma 15** da **[RESILIA](https://www.resilia.com.br/)**  
 
 
 ## Demonstração
@@ -20,6 +14,15 @@ Tudo que você precisa na hora fome em um só lugar! Com o APP TôComFome desenv
 ## Screenshots
 
   --
+
+
+Com este App você consegue realizar um cadastro ou selecionar qualquer item nas seguintes categorias:
+ 
+* [ESTABELECIMENTO]
+* [PRODUTO]
+* [CLIENTE]
+* [PEDIDO]
+* [ENTREGADOR]
 
 
 ## Funcionalidades
@@ -171,11 +174,11 @@ function App() {
 
 ## Documentação de cores
 
-| Cor               | Hexadecimal                                                      |
+| Cor               | Hex                                                    |
 | ----------------- | ---------------------------------------------------------------- |
-| Azul              | ![#5ea8cd](https://via.placeholder.com/10/5ea8cd?text=+) #5ea8cd |
-| Amarelo           | ![#e30d0c](https://via.placeholder.com/10/e30d0c?text=+) #fe30d0c|
-| Dourado           | ![#d4af37](https://via.placeholder.com/10/d4af37?text=+) #d4af37 |
+| Azul              | #5ea8cd |
+| Amarelo           | #fe30d0c|
+| Dourado           | #d4af37 |
 
 
 ## Documentação de fontes
@@ -197,6 +200,8 @@ function App() {
 **API Test:** Insomnia
 
 **Deploy:** Heroku
+
+**Bibliotecas:** react-router-dom 
 
 **Editor:** Visual Studio Code
 
