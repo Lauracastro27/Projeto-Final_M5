@@ -15,12 +15,16 @@ import ImgCard12 from "../../assents/img/Mexican_Food.jpg"
 import ImgCard13 from "../../assents/img/Arabian_Food.jpg"
 import ImgCard14 from "../../assents/img/Thai_Food.jpg"
 import ImgCard15 from "../../assents/img/Brazilian_Food.jpg"
+import Header from "../Header/header"
 // import Sobre from './components/Sobre/sobre'
 
 export default () => {
     return (
-        <body className={style.body}>
-            <div className={style.containerCard1}>
+       <selection>
+           <Header/>
+        <body className={style.body}> 
+        
+            <div className={style.containerCard1} >
                 <div className={style.backgroundCard1}>
                     <div className={style.Foto1}>
                         <img src={ImgCard1} />
@@ -157,5 +161,6 @@ export default () => {
                 </div>
             </div>
         </body>
+        </selection>
     );
 };
