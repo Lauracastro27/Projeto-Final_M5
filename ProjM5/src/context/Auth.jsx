@@ -71,7 +71,7 @@ export const AuthProvider = ({children}) =>{
     const novoProduto = async(nome, marca, preco, validade, ingredientes, qtd)=>{
         const produto = await createProduct(nome, marca, preco, validade, ingredientes, qtd)
         console.log(produto);
-        
+
     }
 
     const logout = ()=>{

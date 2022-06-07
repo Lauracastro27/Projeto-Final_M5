@@ -4,7 +4,8 @@ import Login from "./pages/LoginPage/Login"
 import { AuthProvider, AuthContext } from "./context/Auth";
 import React, {useContext } from "react";
 import Cadastro from './pages/CadastroPage/CadastroPage'
-import UsuarioPage from './pages/Usuario/UsuarioPage'
+import UsuarioPage from './pages/Registro/UsuarioPage'
+import Produtos from './pages/Usuario/Produtos';
 
 const AppRoutes = () =>{
    
@@ -31,6 +32,7 @@ const AppRoutes = () =>{
                 <Route path="/Login" element={<Login/>}/>
                 <Route path="/Cadastro" element={<Cadastro/>}/>
                 <Route path="/Usuario" element={<UsuarioPage/>}/>
+                <Route path="/Produtos" element={<Produtos/>}/>
             </Routes> 
             </AuthProvider>
             
