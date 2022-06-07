@@ -152,11 +152,11 @@ body {
 .cardEscolha {
     font-family: 'Syne', sans-serif;
     background-color:  #ffd000;
+    color: black;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    color: black;
-    margin-top: 20px;
-    width: 100%;
+    justify-content: center;
 }
 
 .tamanhoPadraoImg {
