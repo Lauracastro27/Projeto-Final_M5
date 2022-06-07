@@ -81,20 +81,54 @@ Tudo que você precisa na hora fome em um só lugar! Com o APP TôComFome desenv
 
 ## Documentação da API
 
-#### Retorna todos os itens
+#### Retorna todos os Produtos
 
 ```http
-  GET /api/items
+  GET /produtos
 ```
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
-| `api_key` | `string` | **Obrigatório**. A chave da sua API |
+| `api_key` | `string` | **Obrigatório**. A chave da API |
 
-#### Retorna um item
+
+#### Retorna Produto por ID
 
 ```http
-  GET /api/items/${id}
+  GET /produtos/:id
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `id` | `string` | **Obrigatório**. O ID do item que você quer |
+
+
+#### Cadastro de Produto
+
+```http
+  POST /produtos
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `api_key`   | `string`   | **Obrigatório**. A chave da     API |
+
+
+#### Atualizar Produto
+
+```http
+  PUT /produtos/:id
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `id` | `string` | **Obrigatório**. O ID do item que você quer  |
+
+
+#### Deletar um Produto
+
+```http
+  DELETE /produtos/:id
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
@@ -107,27 +141,13 @@ Tudo que você precisa na hora fome em um só lugar! Com o APP TôComFome desenv
 
 Para fazer o deploy desse projeto rode
 
+https://morning-scrubland-18153.herokuapp.com/
+
+ou
+
 ```bash
   npm run deploy
 ```
-
-
-## Instalação
-
-Instale my-project com npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
-    
-## Contribuindo
-
-Contribuições são sempre bem-vindas!
-
-Veja `contribuindo.md` para saber como começar.
-
-Por favor, siga o `código de conduta` desse projeto.
 
 
 ## Rodando os testes
@@ -149,14 +169,45 @@ function App() {
 }
 ```
 
+## Documentação de cores
+
+| Cor               | Hexadecimal                                                      |
+| ----------------- | ---------------------------------------------------------------- |
+| Azul              | ![#5ea8cd](https://via.placeholder.com/10/5ea8cd?text=+) #5ea8cd |
+| Amarelo           | ![#e30d0c](https://via.placeholder.com/10/e30d0c?text=+) #fe30d0c|
+| Dourado           | ![#d4af37](https://via.placeholder.com/10/d4af37?text=+) #d4af37 |
+
+
+## Documentação de fontes
+
+| Fonte             | Uso                                                              |
+| ----------------- | ---------------------------------------------------------------- |
+| Syne              | Tudo                                                             |
+| Italiana          | Textos importantes                                               |
+
 
 ## Stack utilizada
+
+**UI/UX Design:** Figma
 
 **Front-end:** React, Html, CSS
 
 **Back-end:** Node, Express
 
-**Utilitários:** Visual Studio Code, Insomnia
+**API Test:** Insomnia
+
+**Deploy:** Heroku
+
+**Editor:** Visual Studio Code
+
+**Comunicação:** Discord, WhatsApp
+
+**Metodologias Ágeis:** Kanbam, Scrum
+
+**Apresentação:** Canva Pro
+
+**Readme:** Readme.so
+
 
 
 ## SoftSkills
