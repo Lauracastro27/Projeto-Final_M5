@@ -6,7 +6,7 @@ import { AuthContext } from '../../context/Auth'
 
 function LoginPage() {
 
-  const {login} = useContext(AuthContext);
+  const {login, user} = useContext(AuthContext);
   
   
   const [email, setEmail] = useState("");

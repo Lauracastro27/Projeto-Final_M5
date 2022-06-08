@@ -81,7 +81,7 @@ const CadastroPage = () => {
                   <label htmlFor="senha">Senha:</label>
                   <br />
                   <input
-                    type="number"
+                    type="password"
                     id="senha"
                     placeholder="Digite sua senha"
                     onChange={(e) => setSenha(e.target.value)}
