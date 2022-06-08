@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Syne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap");
+
+.main{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Syne', sans-serif;
+    
+}
+.titulo{
+    font-family: 'Italiana', serif;
+    font-size: 30px;
+}
+.buttom{
+    margin-top: 1em;
+}
+.link{
+    margin: 1em;
+}
+.none{
+    text-decoration: underline;
+    color: white;
+}

@@ -34,7 +34,7 @@ function App() {
     <div>
       <Header/>
       <h1 className='titulo'>Produtos</h1>
-      <ul>
+      <ul className='row'>
         {produtos.map((produto)=>(
           <li className="lista" key={produto._id}>
               <p> Nome do Produto: {produto.Nome}</p>

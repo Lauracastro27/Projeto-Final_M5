@@ -7,10 +7,10 @@ export default () => {
     <footer className={style.footer}>
   <img src={Logo} className={style.logo}/>
   <div className={style.colorText} >
-  <span>Inicio</span>
-  <span>Fale Conosco</span>
-  <span>Redes Sociais</span>
-  <span>Sobre</span>
+  <span className={style.h}>Inicio</span>
+  <span className={style.h}>Fale Conosco</span>
+  <span className={style.h}>Redes Sociais</span>
+  <span className={style.h}>Sobre</span>
   </div>
   <img src={Logo} className={style.logo}/>
     </footer>

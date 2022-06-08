@@ -16,7 +16,7 @@
   column-gap: 20px;
 }
 .logo {
-  width: 60px;
+  width: 70px;
   grid-column: -3; /* create an implicit one at the beginning */
 }
 .menus {
