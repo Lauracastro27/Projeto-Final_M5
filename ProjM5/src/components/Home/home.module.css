@@ -21,20 +21,6 @@ body {
   margin-left: 2em;
 }
 .txtColuna {
-<<<<<<< Updated upstream
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
-    justify-content: center;
-    margin: 180px;
-    font-size: 20px;
-}
-
-.corTexto {
-    color: white;
-    font-family: 'Italiana', serif;
-=======
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -47,7 +33,7 @@ body {
   color: #ffffff;
   font-family: "Italiana", serif;
   font-size: 50px;
->>>>>>> Stashed changes
+
 }
 .corTextoAzul {
   color: #5ea8cd;

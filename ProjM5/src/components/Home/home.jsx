@@ -32,8 +32,7 @@ export default () => {
                     </div>
                     <div className={style.txtColuna}>
                         <div>
-                            <p className={style.corTexto}> "Gastronomia é a arte de usar comida <br />
-                            para criar felicidade."</p><br />
+                            <p className={style.corTexto}> "Gastronomia é a arte de usar comida para criar felicidade."</p>
                             <p className={style.corTextoAzul}>"A cozinha é multi-sensorial..."</p>
                         </div>
                     </div>
@@ -45,7 +44,7 @@ export default () => {
             <div className={style.txtColuna}>
                 <p className={style.textw}>
                   
-                  "Gastronomia é a arte de usar comida <br />
+                  "Gastronomia é a arte de usar comida 
                   para criar felicidade."
                 </p>
                 <br />

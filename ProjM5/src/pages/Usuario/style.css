@@ -1,0 +1,27 @@
+body{
+    display: flexbox;
+    background-color: rgb(8, 8, 8);
+}
+.titulo{
+    align-items: center;
+    color: white;
+ font-size: 2rem;
+}
+li{
+    background-color: gray;
+    height: 300px;
+    width: 300px;
+    border-width: 10px;
+    border-style: groove;
+    border-color: aliceblue;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: black;
+}
+.btn{
+    margin-top: 160px;
+    margin-left: 95px;
+}

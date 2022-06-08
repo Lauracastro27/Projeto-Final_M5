@@ -4,13 +4,12 @@ import style from "../Header/header.module.css"
 import { AuthContext } from "../../context/Auth";
 import { Link } from "react-router-dom";
 
+
 export default () => { 
   const {logout, user} = useContext(AuthContext);
   const handleLogout = ()=>{
     logout();
   }
-
-export default () => { 
 
   return (
     
@@ -21,6 +20,8 @@ export default () => {
         </div>
         <div className={style.menus}>
         <Link to='/Cadastro'>Cadastre-se</Link>
+        <Link to='/Produtos'>Produtos</Link>
+        <Link to='/Registrar'>Novo Produto</Link>
             <div>
               <select className={style.inputCelect}>
                 <option>-----</option>
@@ -35,23 +36,6 @@ export default () => {
         <Link to='/Sobre'>Sobre </Link>
         {user &&  <button onClick={handleLogout}>Sair</button>}
 
-          <a>Cadastre-se</a>
-<<<<<<< Updated upstream
-          <div>
-            <select className={style.inputSelect}>
-              <option disabled>Cadastre-se</option>
-              <option>Pedido</option>
-              <option>Estabelecimento</option>
-              <option>Entregador</option>
-              <option>Cliente</option>
-              <option>Produto</option>
-            </select>
-          </div>
-=======
->>>>>>> Stashed changes
-          <a>Contate-nos</a>
-          <a>Sobre</a>
-          <a>Login</a>
         </div>
       </nav>
     </header>

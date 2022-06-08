@@ -26,8 +26,7 @@ const { cadastro } = useContext(AuthContext);
 
     return (
         <section>
-            <Header />
-
+       
         <body className={style.fundo}>
             <Header/>
             <h1 className={style.cadastro}>Cadastro</h1>

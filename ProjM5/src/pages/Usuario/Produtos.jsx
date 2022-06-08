@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useContext } from 'react'
 import {AuthContext} from '../../context/Auth'
 import {getProdutos, deleteProduct} from '../../utils/axios'
+import Header from '../../components/Header/header'
+import './style.css'
 function App() {
- // const [url, setUrl] = useState()
+
  const [produtos, setProdutos] = useState([]);
  const [loading, setLoading] = useState(true);
  const {logout } = useContext(AuthContext);
-  const handleLogout = ()=>{
-    logout();
-  }
 
   const deletarProduto = async(id)=>{
     const produtoAntigo = await deleteProduct(id)
@@ -33,20 +32,18 @@ function App() {
 
   return (
     <div>
-      
-      <button onClick={handleLogout}>Sair</button>
+      <Header/>
+      <h1 className='titulo'>Produtos</h1>
       <ul>
         {produtos.map((produto)=>(
           <li key={produto._id}>
-              <p>
-           Nome do Produto: {produto.Nome} 
-           Marca: {produto.Marca}
-           Preço: {produto.Preco} 
-           Quantidade: {produto.Quantidade}
-           Validade: {produto.Validade}
+              <p> Nome do Produto: {produto.Nome}</p>
+           <p>Marca: {produto.Marca}</p>
+           <p>Preço: {produto.Preco} </p>
+           <p>Quantidade: {produto.Quantidade}</p>
+           <p>Validade: {produto.Validade}</p>
            Ingredientes: {produto.Ingredientes}
-           <button onClick={()=>deletarProduto(produto._id)}>Deletar Produto</button>
-            </p>
+           <button className='btn' onClick={()=>deletarProduto(produto._id)}>Deletar Produto</button>
           </li>
         ))}
       </ul>

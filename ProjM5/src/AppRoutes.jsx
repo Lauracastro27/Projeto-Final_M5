@@ -33,7 +33,7 @@ const AppRoutes = () =>{
                 <Route path="/" element={<Private><Home/></Private>}/>
                 <Route path="/Login" element={<Login/>}/>
                 <Route path="/Cadastro" element={<Cadastro/>}/>
-                <Route path="/Usuario" element={<UsuarioPage/>}/>
+                <Route path="/Registrar" element={<UsuarioPage/>}/>
                 <Route path="/Produtos" element={<Produtos/>}/>
                 <Route path="/Sobre" element={<Sobre/>}/>
             </Routes> 
