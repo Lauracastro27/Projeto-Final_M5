@@ -8,12 +8,8 @@ Tudo que você precisa na hora fome em um só lugar! Conheça o APP TôComFome d
 
 ## Demonstração
 
-  --
-
-
-## Screenshots
-
-  --
+<img width="636" alt="image" src="https://user-images.githubusercontent.com/95043315/172604472-47da5454-75fc-4c45-b5c7-bb4f32a07c9a.png">
+<img width="519" alt="image" src="https://user-images.githubusercontent.com/95043315/172604517-c69d52ab-b305-4b04-87a9-36c986a388a1.png">
 
 
 Com este App você consegue realizar um cadastro ou selecionar qualquer item nas seguintes categorias:
@@ -82,7 +78,44 @@ Com este App você consegue realizar um cadastro ou selecionar qualquer item nas
 ---
 
 
-## Documentação da API
+## Deploy
+
+Para fazer o deploy desse projeto rode
+
+```
+npm install react-scripts@latest
+
+npm run dev
+```
+
+Acesse:
+
+[localhost:3000](https://morning-scrubland-18153.herokuapp.com/)
+
+e adicione uma das rotas a seguir para submeter ou receber dados:
+
+
+## Rotas para requisições
+
+```javascript
+return(
+        <BrowserRouter>
+        <AuthProvider>
+            <Routes>
+                <Route path="/" element={<Private><Home/></Private>}/>
+                <Route path="/Login" element={<Login/>}/>
+                <Route path="/Cadastro" element={<Cadastro/>}/>
+                <Route path="/Usuario" element={<UsuarioPage/>}/>
+                <Route path="/Produtos" element={<Produtos/>}/>
+                <Route path="/Sobre" element={<Sobre/>}/>
+            </Routes> 
+            </AuthProvider>
+            
+        </BrowserRouter>
+    )
+```
+
+## Obtendo Retornos
 
 #### Retorna todos os Produtos
 
@@ -139,38 +172,10 @@ Com este App você consegue realizar um cadastro ou selecionar qualquer item nas
 | `id`      | `string` | **Obrigatório**. O ID do item que você quer |
 
 
+Também é possível submeter e receber dados utilizando a interface gráfica do site sem necessidade de uso manual das rotas no endereço.
 
-## Deploy
+Mais informações para rodar a aplicação: [Documentação](https://create-react-app.dev/)
 
-Para fazer o deploy desse projeto rode
-
-https://morning-scrubland-18153.herokuapp.com/
-
-ou
-
-```bash
-  npm run deploy
-```
-
-
-## Rodando os testes
-
-Para rodar os testes, rode o seguinte comando
-
-```bash
-  npm run test
-```
-
-
-## Uso/Exemplos
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
 
 ## Documentação de cores
 
@@ -217,7 +222,9 @@ function App() {
 
 ## SoftSkills
 
-O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e como você superou-os?
+SCRUM com utilização de Kanban;
+Divisão de tarefas com backlogs;
+Execução de tarefas críticas com Sprints.
 
 
 ## Autores
