@@ -5,7 +5,7 @@ import './style.css'
 import { AuthContext } from '../../context/Auth'
 
 function LoginPage() {
- 
+
   const {login} = useContext(AuthContext);
   
   
@@ -15,7 +15,6 @@ function LoginPage() {
   const handleSubmit = async (e) =>{
     e.preventDefault();
     console.log('submit', {email, senha})
- 
    await login(email, senha);//Integracao com o contexto e api
   }
 
@@ -48,9 +47,9 @@ function LoginPage() {
               <button className='bt1' type="submit">Entrar</button>
             </div>
             </div>
-        </form>
-    </div>
-    </main>
+            </form>
+         </div>
+      </main>
     </section>
   );
 }

@@ -20,14 +20,29 @@ import Footer from "../Footer/footer";
 // import Sobre from './components/Sobre/sobre'
 
 export default () => {
-  return (
-    <section>
-      <Header />
-      <body className={style.body}>
-        <div className={style.containerCard1}>
-          <div className={style.backgroundCard1}>
-            <div className={style.Foto1}>
-              <img src={ImgCard1} />
+
+    return (
+       < >
+           <Header/>
+        <body className={style.body}> 
+        
+            <div className={style.containerCard1} >
+                <div className={style.backgroundCard1}>
+                    <div className={style.Foto1}>
+                        <img src={ImgCard1} />
+                    </div>
+                    <div className={style.txtColuna}>
+                        <div>
+                            <p className={style.corTexto}> "Gastronomia é a arte de usar comida <br />
+                            para criar felicidade."</p><br />
+                            <p className={style.corTextoAzul}>"A cozinha é multi-sensorial..."</p>
+                        
+                        </div>
+                    </div>
+                    <div className={style.Foto2}>
+                        <img class={style.maginImgSalsa} src={ImgCard2} />
+                    </div>
+                </div>
             </div>
             <div className={style.txtColuna}>
               <div>
@@ -169,6 +184,7 @@ export default () => {
         </div>
       </body>
       <Footer />
-    </section>
+    </>
   );
 };
+

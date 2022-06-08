@@ -1,13 +1,12 @@
 import React, {useState, useEffect, createContext} from 'react'
 import { useNavigate } from 'react-router-dom';
-import { createSession, createUser, createProduct} from "../utils/axios"
+import { createSession, createUser, createProduct, deleteProduct, getProdutos} from "../utils/axios"
 export const AuthContext = createContext('');
 
 
 export const AuthProvider = ({children}) =>{
 
     const navigate = useNavigate();
-
     const [user, setUser] = useState('');
 
     const [loading, setLoading] = useState(true);
@@ -73,6 +72,20 @@ export const AuthProvider = ({children}) =>{
         console.log(produto);
 
     }
+    // const atualiza = async() =>{
+    //     const response = await getProdutos();
+    //     setProdutos(response.data);
+    //     setLoading(false);
+    //   }
+       
+    // useEffect(()=>{
+    // (atualiza())
+    // },[])
+ 
+    // const deletarProduto = async(id)=>{
+    //     const produtoAntigo = await deleteProduct(id)
+    //     console.log(produtoAntigo)
+    // }
 
     const logout = ()=>{
         console.log("logout");

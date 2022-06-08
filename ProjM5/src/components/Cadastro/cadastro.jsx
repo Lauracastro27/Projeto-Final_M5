@@ -1,57 +1,84 @@
-import React from "react";
+import React, {useState, useContext}from "react";
 import style from "../Cadastro/cadastro.module.css";
-import Header from "../Header/header"
+import { AuthContext } from "../../context/Auth";
+import Header from "../../components/Header/header";
 import Footer from "../Footer/footer"
-export default () => {
+
+const CadastroPage = () => {
+
+const { cadastro } = useContext(AuthContext);
+ 
+
+  
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [idade, setIdade] = useState(0);
+  const [nome, setNome] = useState("");
+  const [endereco, setEndereco] = useState("");
+  const [favorito, setFavorito] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    await cadastro(email, senha, nome, idade, endereco, favorito); //Integracao com o contexto e api
+  };
+
+
     return (
         <section>
             <Header />
+
         <body className={style.fundo}>
+            <Header/>
             <h1 className={style.cadastro}>Cadastro</h1>
             <div className={style.formulario}>
-                <form action="/pagina-processa-dados-do-form" method="post">
+                <form  method="post" onSubmit={handleSubmit}>
                     <div>
-                        <label for="nome">Nome Completo:</label><br/>
-                        <input type="text" id="nome" placeholder="Digite o seu nome..." />
+                        <label htmlFor="nome">Nome Completo:</label><br/>
+                        <input type="text" id="nome" placeholder="Digite o seu nome..." 
+                          onChange={(e) => setNome(e.target.value)}/>
                     </div>
                     <div>
-                        <label for="date">Data de Nascimento:</label><br/>
-                        <input type="date" id="date" placeholder="Ex.: 00/00/0000" />
+                        <label htmlFor="date">Idade:</label><br/>
+                        <input type="number" id="date" placeholder="Digite sua idade" 
+                          onChange={(e) => setIdade(e.target.value)}/>
                     </div>
                     <div>
-                        <label for="email">E-mail:</label><br/>
-                        <input type="email" id="email" placeholder="email@email.com" />
+                        <label htmlFor="email">E-mail:</label><br/>
+                        <input type="email" id="email" placeholder="email@email.com" 
+                          onChange={(e) => setEmail(e.target.value)}/>
                     </div>
+                   
                     <div>
-                        <label for="telefone">Telefone:</label><br/>
-                        <input type="number" placeholder="(00) 0000-0000" />
-                    </div>
-                    <div>
-                        <label for="cpf">CPF:</label><br/>
-                        <input type="number" placeholder="000.000.000-00" />
+                        <label htmlFor="cpf">Endereço:</label><br/>
+                        <input type="text" placeholder="Rua xxxx" 
+                          onChange={(e) => setEndereco(e.target.value)}/>
                         <div>
                             <div>
-                                <label for="telefone">CEP:</label><br/>
-                                <input type="number" placeholder="00.000-000" />
+                                <label htmlFor="fav">Comida Favorita:</label><br/>
+                                <input type="text" placeholder="Pizza"
+                                  onChange={(e) => setFavorito(e.target.value)} />
                             </div>
-
+       
                             <div>
-                                <label for="entrega">Meio de Entrega:</label><br/>
-                                <input type="text" id="entrega" placeholder="Carro, Moto ou Bicicleta" />
-                            </div>
-                            <div>
-                                <label for="senha">Senha:</label><br/>
-                                <input type="number" id="senha" placeholder="******" />
+                                <label htmlFor="senha">Senha:</label><br/>
+                                <input type="number" id="senha" placeholder="123"
+                                  onChange={(e) => setSenha(e.target.value)} />
                             </div>
                         </div>
                     </div>
+                    <p></p>
                     <div className={style.alinhamentoButton}>
+                        
                         <button type="submit">Cadastrar</button>
                     </div>
                 </form>
             </div>
-        </body>
+        </body>    
         <Footer />
         </section>
+
     );
 };
+
+export default CadastroPage;
