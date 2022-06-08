@@ -1,8 +1,11 @@
 import React from "react";
 import style from "../Cadastro/cadastro.module.css";
-
+import Header from "../Header/header"
+import Footer from "../Footer/footer"
 export default () => {
     return (
+        <section>
+            <Header />
         <body className={style.fundo}>
             <h1 className={style.cadastro}>Cadastro</h1>
             <div className={style.formulario}>
@@ -48,5 +51,7 @@ export default () => {
                 </form>
             </div>
         </body>
+        <Footer />
+        </section>
     );
 };

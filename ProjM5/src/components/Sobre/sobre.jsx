@@ -1,8 +1,12 @@
 import React from "react";
 import style from "../Sobre/sobre.module.css";
+import Header from "../Header/header"
+import Footer from "../Footer/footer"
 
 export default () => {
     return (
+        <section>
+            <Header />
         <body className={style.fundo}>
         <div className={style.container}>
         <br /><h1>
@@ -24,5 +28,7 @@ export default () => {
             <br />
         </div>
     </body>
+    <Footer />
+    </section>
 );
 };

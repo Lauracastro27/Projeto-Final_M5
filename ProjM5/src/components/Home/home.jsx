@@ -16,6 +16,7 @@ import ImgCard12 from "../../assents/img/Mexican_Food.jpg";
 import ImgCard13 from "../../assents/img/Arabian_Food.jpg";
 import ImgCard14 from "../../assents/img/Thai_Food.jpg";
 import ImgCard15 from "../../assents/img/Brazilian_Food.jpg";
+import Footer from "../Footer/footer";
 // import Sobre from './components/Sobre/sobre'
 
 export default () => {
@@ -167,6 +168,7 @@ export default () => {
           </div>
         </div>
       </body>
+      <Footer />
     </section>
   );
 };
