@@ -1,9 +1,11 @@
 import { useState, useContext } from 'react'
-import Header from '../../components/Header/header'
+import HeaderLogin from '../../components/Header/headerLogin'
+import api from "../../utils/axios"
 import './style.css'
 import { AuthContext } from '../../context/Auth'
 
 function LoginPage() {
+
   const {login} = useContext(AuthContext);
   
   
@@ -13,21 +15,18 @@ function LoginPage() {
   const handleSubmit = async (e) =>{
     e.preventDefault();
     console.log('submit', {email, senha})
-   
-    
    await login(email, senha);//Integracao com o contexto e api
   }
 
   return (
+    <section>
+    <HeaderLogin />
     <main>
-    <Header />
     <div id="login">
-
       <form className="form" onSubmit={handleSubmit}>
         <div className="container">
         <div className="brand-title">Login</div>
         <div className="inputs">
-
                <label htmlFor="email">
                   Email
                </label>
@@ -35,9 +34,6 @@ function LoginPage() {
                 name="email"
                 id="email" 
                 onChange={(e)=> setEmail(e.target.value)}/>
-            
-
-         
                <label htmlFor="password">
                  Senha
                </label>
@@ -46,18 +42,16 @@ function LoginPage() {
             name="password" 
             id="password"
             onChange={(e)=> setSenha(e.target.value)}/>
-          
-         
           </div>
             <div className="actions">
               <button className='bt1' type="submit">Entrar</button>
             </div>
             </div>
-        </form>
-    </div>
-
-    </main>
-  )
+            </form>
+         </div>
+      </main>
+    </section>
+  );
 }
 
 export default LoginPage;

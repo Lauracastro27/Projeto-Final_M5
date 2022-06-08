@@ -10,6 +10,8 @@ export default () => {
     logout();
   }
 
+export default () => { 
+
   return (
     
     <header className={style.header}>
@@ -32,9 +34,23 @@ export default () => {
            
         <Link to='/Sobre'>Sobre </Link>
         {user &&  <button onClick={handleLogout}>Sair</button>}
+
+          <a>Cadastre-se</a>
+          <div>
+            <select className={style.inputSelect}>
+              <option disabled>Cadastre-se</option>
+              <option>Pedido</option>
+              <option>Estabelecimento</option>
+              <option>Entregador</option>
+              <option>Cliente</option>
+              <option>Produto</option>
+            </select>
+          </div>
+          <a>Contate-nos</a>
+          <a>Sobre</a>
+          <a>Login</a>
         </div>
       </nav>
     </header>
   );
 };
-

@@ -2,6 +2,7 @@ import React, {useState, useContext}from "react";
 import style from "../Cadastro/cadastro.module.css";
 import { AuthContext } from "../../context/Auth";
 import Header from "../../components/Header/header";
+import Footer from "../Footer/footer"
 
 const CadastroPage = () => {
 
@@ -22,8 +23,11 @@ const { cadastro } = useContext(AuthContext);
     await cadastro(email, senha, nome, idade, endereco, favorito); //Integracao com o contexto e api
   };
 
+
     return (
-        
+        <section>
+            <Header />
+
         <body className={style.fundo}>
             <Header/>
             <h1 className={style.cadastro}>Cadastro</h1>
@@ -70,8 +74,10 @@ const { cadastro } = useContext(AuthContext);
                     </div>
                 </form>
             </div>
-        </body>
-       
+        </body>    
+        <Footer />
+        </section>
+
     );
 };
 
