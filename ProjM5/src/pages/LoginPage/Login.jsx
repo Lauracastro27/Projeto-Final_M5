@@ -1,6 +1,5 @@
 import { useState, useContext } from 'react'
 import Header from '../../components/Header/header'
-import api from "../../utils/axios"
 import './style.css'
 import { AuthContext } from '../../context/Auth'
 
@@ -25,8 +24,8 @@ function LoginPage() {
     <div id="login">
 
       <form className="form" onSubmit={handleSubmit}>
-        <div classNameNameName="container">
-        <div class="brand-title">Login</div>
+        <div className="container">
+        <div className="brand-title">Login</div>
         <div className="inputs">
 
                <label htmlFor="email">

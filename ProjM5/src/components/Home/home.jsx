@@ -20,7 +20,7 @@ import Header from "../Header/header"
 
 export default () => {
     return (
-       <selection>
+       < >
            <Header/>
         <body className={style.body}> 
         
@@ -161,6 +161,6 @@ export default () => {
                 </div>
             </div>
         </body>
-        </selection>
+        </>
     );
 };

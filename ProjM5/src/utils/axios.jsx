@@ -13,8 +13,8 @@ export const createSession = async (email) =>{
   
 }
 
-export const getUsers = async ()=>{
-  return api.get('clientes');
+export const getProdutos = async ()=>{
+  return api.get('produtos');
 }
 
 export const createUser = async (email, senha, nome, idade, endereco, favorito)=>{
@@ -28,6 +28,10 @@ export const createProduct = async (nome, marca, preco, validade, ingredientes, 
   return await api.post('produtos', {Nome: nome, Marca: marca, Preco: preco, Validade: validade, 
     Ingredientes: ingredientes, Quantidade: qtd})
 
+}
+
+export const deleteProduct = async(id)=>{
+  return await api.delete(`produtos/${id}`)
 }
 //1 - get nos cliente
 //2- verificar o email do cliente - usando o find
