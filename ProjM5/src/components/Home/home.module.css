@@ -4,9 +4,6 @@
 body {
   background-color: black;
 }
-.containerCard1 {
-  width: 100%;
-}
 .backgroundCard1 {
   background-image: url("../../assents/img/background.png");
   display: flex;
@@ -49,13 +46,12 @@ body {
 }
 .Foto2 {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: 200px;
-  margin-left: 30em;
+  position: absolute;
+  right: 0;
+  bottom: 30%;
 }
 .maginImgSalsa {
-  align-self: flex-end;
+ position: relative;
 }
 
 .containerDiv2 {

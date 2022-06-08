@@ -36,7 +36,7 @@ function App() {
       <h1 className='titulo'>Produtos</h1>
       <ul>
         {produtos.map((produto)=>(
-          <li key={produto._id}>
+          <li className="lista" key={produto._id}>
               <p> Nome do Produto: {produto.Nome}</p>
            <p>Marca: {produto.Marca}</p>
            <p>Preço: {produto.Preco} </p>

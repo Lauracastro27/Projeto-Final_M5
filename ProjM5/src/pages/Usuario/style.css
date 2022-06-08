@@ -7,7 +7,7 @@ body{
     color: white;
  font-size: 2rem;
 }
-li{
+.lista{
     background-color: gray;
     height: 300px;
     width: 300px;

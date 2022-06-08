@@ -6,6 +6,12 @@
 body {
   background-color: #000;
 }
+.main{
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  background-color: #000;
+}
 .pz {
   display: flex;
   flex-direction: row;
@@ -13,12 +19,13 @@ body {
   justify-content: center;
   margin-top: 4em;
   animation: loading 15s linear infinite;
+  z-index: 999;
 }
 .esquerdo {
-  animation: e 10s linear 5s infinite;
+  animation: e 10s linear 3s infinite;
 }
 .direito {
-  animation: d 10s linear 5s infinite;
+  animation: d 10s linear 3s infinite;
 }
 .loading {
   display: flex;

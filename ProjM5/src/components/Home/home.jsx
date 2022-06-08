@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "../Home/home.module.css";
 import Header from "../Header/header";
 import ImgCard1 from "../../assents/img/imagem1.png";
@@ -17,50 +17,48 @@ import ImgCard13 from "../../assents/img/Arabian_Food.jpg";
 import ImgCard14 from "../../assents/img/Thai_Food.jpg";
 import ImgCard15 from "../../assents/img/Brazilian_Food.jpg";
 import Footer from "../Footer/footer";
+import Animacao from "../../assents/Animacao/Animacao";
 // import Sobre from './components/Sobre/sobre'
 
 export default () => {
+  const [animacao, setAnimacao] = useState(false);
+  useEffect(() => {
+    setAnimacao(true);
+    setTimeout(() => {
+      setAnimacao(false);
+    }, 10000);
+  }, []);
 
-    return (
-       <section>
-           <Header/>
-        <body className={style.body}> 
-            <div className={style.containerCard1} >
-                <div className={style.backgroundCard1}>
-                    <div className={style.Foto1}>
-                        <img src={ImgCard1} />
-                    </div>
-                    <div className={style.txtColuna}>
-                        <div>
-                            <p className={style.corTexto}> "Gastronomia é a arte de usar comida para criar felicidade."</p>
-                            <p className={style.corTextoAzul}>"A cozinha é multi-sensorial..."</p>
-                        </div>
-                    </div>
-                    <div className={style.Foto2}>
-                        <img class={style.maginImgSalsa} src={ImgCard2} />
-                    </div>
-                </div>
-            </div>
-            <div className={style.txtColuna}>
-                <p className={style.textw}>
-                  
-                  "Gastronomia é a arte de usar comida 
-                  para criar felicidade."
-                </p>
-                <br />
-                <p className={style.corTextoAzul}>
-                  "A cozinha é multi-sensorial..."
-                </p>
-            </div>
-            <div className={style.Foto2}>
-              <img className={style.maginImgSalsa} src={ImgCard2} />
-            </div>
+  return (
+    <>
+      {animacao ? <Animacao />
+      : <>
+
+      <Header />
+      <main className={style.body}>
+        <div className={style.backgroundCard1}>
+          <div className={style.Foto1}>
+            <img src={ImgCard1} />
+          </div>
+          <div className={style.txtColuna}>
+            <p className={style.textw}>
+              "Gastronomia é a arte de usar comida para criar felicidade."
+            </p>
+            <br />
+            <p className={style.corTextoAzul}>
+              "A cozinha é multi-sensorial..."
+            </p>
+          </div>
+        </div>
+        <div className={style.Foto2}>
+          <img className={style.maginImgSalsa} src={ImgCard2} />
+        </div>
         <div className={style.containerDiv2}>
           <h1 className={style.textoIta}>Restaurantes 5 estrelas</h1>
           <div className={style.BackgroudDiv2}>
             <card className={style.marginImg}>
               <img className={style.tamanhoImg} src={ImgCard3} />
-              <h4 className={style.start} >Donmie Churros Gourmet</h4>
+              <h4 className={style.start}>Donmie Churros Gourmet</h4>
               <p className={style.start}>Churros Gourmet</p>
               <p className={style.start}>
                 <img className={style.tamanhoEstrela} src={ImgCard6} />
@@ -143,9 +141,7 @@ export default () => {
           </div>
         </div>
         <div className={style.centralizaTexto}>
-          <h1 className={style.textoIta}>
-            Escolha sua culinária favorita
-          </h1>
+          <h1 className={style.textoIta}>Escolha sua culinária favorita</h1>
           <div className={style.cardEscolha}>
             <div>
               <h1>Asian Food</h1>
@@ -174,10 +170,9 @@ export default () => {
             </div>
           </div>
         </div>
-      </body>
+      </main>
       <Footer />
-    </section>
-  )
+  </>}
+  </>
+  );
 };
-
-

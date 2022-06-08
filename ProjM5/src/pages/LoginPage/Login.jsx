@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react'
-import HeaderLogin from '../../components/Header/headerLogin'
+import Header from '../../components/Header/header'
 import api from "../../utils/axios"
 import './style.css'
 import { AuthContext } from '../../context/Auth'
@@ -20,7 +20,7 @@ function LoginPage() {
 
   return (
     <section>
-    <HeaderLogin />
+    <Header />
     <main>
     <div id="login">
       <form className="form" onSubmit={handleSubmit}>

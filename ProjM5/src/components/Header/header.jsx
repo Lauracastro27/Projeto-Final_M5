@@ -4,7 +4,6 @@ import style from "../Header/header.module.css"
 import { AuthContext } from "../../context/Auth";
 import { Link } from "react-router-dom";
 
-
 export default () => { 
   const {logout, user} = useContext(AuthContext);
   const handleLogout = ()=>{
@@ -18,25 +17,14 @@ export default () => {
         <div className={style.logo}>
        <Link to='/'> <img src={Logo} className={style.logoimg} /></Link>
         </div>
-        <div className={style.menus}>
-        <Link to='/Cadastro'>Cadastre-se</Link>
-        <Link to='/Produtos'>Produtos</Link>
-        <Link to='/Registrar'>Novo Produto</Link>
-            <div>
-              <select className={style.inputCelect}>
-                <option>-----</option>
-                <option>Pedido</option>
-                <option>Estabelicimento</option>
-                <option>Entragadores</option>
-                <option>Cliente</option>
-                <option>Produto</option>
-              </select>
-            </div>
-           
-        <Link to='/Sobre'>Sobre </Link>
+        <ul className={style.menus}>
+        <Link to='/Cadastro' className={style.none}><li>Cadastre-se</li></Link>
+        <Link to='/Produtos' className={style.none}><li>Produtos</li></Link>
+        <Link to='/Registrar' className={style.none}><li>Novo Produto</li></Link>           
+        <Link to='/Sobre' className={style.none}><li>Sobre</li></Link>
+        <div className={style.sair}></div>
         {user &&  <button onClick={handleLogout}>Sair</button>}
-
-        </div>
+        </ul>
       </nav>
     </header>
   );
