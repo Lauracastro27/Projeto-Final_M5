@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Syne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Syne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap");
 
 body {
-    background-color: black;
+  background-color: black;
 }
 .containerCard1 {
-    width: 100%;
+  width: 100%;
 }
 .backgroundCard1 {
-    background-image: url("../../assents/img/background.png");
-    display: flex;
-    flex-direction: row;
-    align-items: center !important;
-    width: 100%;
-    height: 280px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+  background-image: url("../../assents/img/background.png");
+  display: flex;
+  flex-direction: row;
+  align-items: center !important;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .Foto1 {
-    margin-top: 80px;
-    margin-left: 20px;
-    margin-right: 10px;
+  margin-top: 8em;
+  margin-left: 2em;
 }
 .txtColuna {
+<<<<<<< Updated upstream
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -35,141 +34,181 @@ body {
 .corTexto {
     color: white;
     font-family: 'Italiana', serif;
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  justify-content: center;
+  margin: 180px;
+  font-size: 30px;
+}
+.textoIta {
+  color: #ffffff;
+  font-family: "Italiana", serif;
+  font-size: 50px;
+>>>>>>> Stashed changes
 }
 .corTextoAzul {
-    color: #5ea8cd;
-    font-family: 'Syne', sans-serif;
+  color: #5ea8cd;
+  font-family: "Syne", sans-serif;
+}
+.textw {
+  color: #ffffff;
+  font-family: "Syne", sans-serif;
+}
+.textb {
+  color: #000000;
+  font-family: "Syne", sans-serif;
 }
 .Foto2 {
-    margin-top: 200px;
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    justify-content: end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 200px;
+  margin-left: 30em;
 }
 .maginImgSalsa {
-    margin: 10px;
-    width: 200px;
-    height: 200px;
+  align-self: flex-end;
 }
 
 .containerDiv2 {
-    text-align: center;
-    margin-top: 90px;
+  text-align: center;
+  margin-top: 90px;
 }
 .BackgroudDiv2 {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  margin: 26px;
 }
 
 .marginImg {
-    font-family: 'Syne', sans-serif;
-    margin: 26px;
-    background-color: #5ea8cd;
+  font-family: "Syne", sans-serif;
+  background-color: #5ea8cd;
+}
+.start{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1em;
+    margin: 10px;
 }
 .tamanhoImg {
-    margin-top: 5px;
-    width: 290px;
-    height: 200px;
-    
+  width: 90%;
+  height: 250px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: "Syne", sans-serif;
+  font-size: 25px;
 }
 .tamanhoEstrela {
-    font-family: 'Syne', sans-serif;
-    width: 25%;
-    height: 25%;
-    margin: 0;
-    flex-direction: row;
+  width: 25%;
+  height: 25%;
 }
 .centralizaTexto2 {
-    margin-bottom: 150px;
-    text-align: center;
+  margin-bottom: 130px;
+  margin-top: 20px;
+  text-align: center;
 }
 .centralizaTexto {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.textcentral{
     text-align: center;
 }
 .bgImgTop {
-    margin-top: 100px;
-    width: 100%;
-    height: 400px;
-    background-image: url("../../assents/img/background.png");
+  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+  background-image: url("../../assents/img/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .marginImgTop2 {
-    margin: -100px;
-    border-radius: 40px;
+  margin: -100px;
+  border-radius: 40px;
+}
+.titulohist {
+  display: flex;
+  justify-content: center;
+  font-family: "Italiana", serif;
+  margin-top: 7em;
+  color: #ffffff;
+  font-size: 30px;
 }
 .bgWhite {
-    font-family: 'Syne', sans-serif;
-    margin-top: 200px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Syne", sans-serif;
+  margin-top: 1em;
+  font-size: 20px;
 }
 .flexRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.tituloSublinhado {
-    font-family: 'Italiana', serif;
-    text-decoration: underline;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .cardEscolha {
-    font-family: 'Syne', sans-serif;
-    background-color:  #ffd000;
-    color: black;
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  font-family: "Syne", sans-serif;
+  background: linear-gradient(90deg, #ffd000 0%, #ffea8c 84%, #ffffff 100%);
+  color: black;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 25px;
+  padding: 1em;
 }
 .tamanhoPadraoImg {
-    width: 400px;
-    height: 200px;
-    margin: 20px;
+  width: 400px;
+  height: 200px;
+  margin: 20px;
 }
 .corButtonCard1 {
-    background-color: #0000 !important;
-    border-color: #ffd000;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    border-radius: 10px;
-    width: 100px;
-    height: 50px;
+  background-color: #00000000 !important;
+  border-color: #ffd000;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
 }
 .marginImgTop {
-    margin: 20px;
-    border-radius: 40px;
+  margin: 20px;
+  border-radius: 40px;
 }
 .posicaoTxt {
-    font-family: 'Syne', sans-serif;
-    background-color:  #ffd000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: "Syne", sans-serif;
+  background-color: #ffd000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
-    .bory {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
+  .bory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .bory {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
+  .bory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }

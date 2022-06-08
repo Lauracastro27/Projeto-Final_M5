@@ -36,6 +36,7 @@ export default () => {
         {user &&  <button onClick={handleLogout}>Sair</button>}
 
           <a>Cadastre-se</a>
+<<<<<<< Updated upstream
           <div>
             <select className={style.inputSelect}>
               <option disabled>Cadastre-se</option>
@@ -46,6 +47,8 @@ export default () => {
               <option>Produto</option>
             </select>
           </div>
+=======
+>>>>>>> Stashed changes
           <a>Contate-nos</a>
           <a>Sobre</a>
           <a>Login</a>

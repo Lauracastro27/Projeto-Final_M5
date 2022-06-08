@@ -22,10 +22,9 @@ import Footer from "../Footer/footer";
 export default () => {
 
     return (
-       < >
+       <section>
            <Header/>
         <body className={style.body}> 
-        
             <div className={style.containerCard1} >
                 <div className={style.backgroundCard1}>
                     <div className={style.Foto1}>
@@ -36,7 +35,6 @@ export default () => {
                             <p className={style.corTexto}> "Gastronomia é a arte de usar comida <br />
                             para criar felicidade."</p><br />
                             <p className={style.corTextoAzul}>"A cozinha é multi-sensorial..."</p>
-                        
                         </div>
                     </div>
                     <div className={style.Foto2}>
@@ -45,9 +43,8 @@ export default () => {
                 </div>
             </div>
             <div className={style.txtColuna}>
-              <div>
-                <p className={style.corTexto}>
-                  {" "}
+                <p className={style.textw}>
+                  
                   "Gastronomia é a arte de usar comida <br />
                   para criar felicidade."
                 </p>
@@ -55,39 +52,36 @@ export default () => {
                 <p className={style.corTextoAzul}>
                   "A cozinha é multi-sensorial..."
                 </p>
-              </div>
             </div>
             <div className={style.Foto2}>
               <img className={style.maginImgSalsa} src={ImgCard2} />
             </div>
-          </div>
-        </div>
         <div className={style.containerDiv2}>
-          <h1 className={style.corTexto}>Restaurantes 5 estrelas</h1>
+          <h1 className={style.textoIta}>Restaurantes 5 estrelas</h1>
           <div className={style.BackgroudDiv2}>
             <card className={style.marginImg}>
               <img className={style.tamanhoImg} src={ImgCard3} />
-              <h4>Donmie Churros Gourmet</h4>
-              <p>Churros Gourmet</p>
-              <p>
+              <h4 className={style.start} >Donmie Churros Gourmet</h4>
+              <p className={style.start}>Churros Gourmet</p>
+              <p className={style.start}>
                 <img className={style.tamanhoEstrela} src={ImgCard6} />
                 268 Avaliações
               </p>
             </card>
             <card className={style.marginImg}>
               <img className={style.tamanhoImg} src={ImgCard4} />
-              <h4>Royale Burguer</h4>
-              <p>Hamburgueria</p>
-              <p>
+              <h4 className={style.start}>Royale Burguer</h4>
+              <p className={style.start}>Hamburgueria</p>
+              <p className={style.start}>
                 <img className={style.tamanhoEstrela} src={ImgCard6} />
                 1.532 Avaliações
               </p>
             </card>
             <card className={style.marginImg}>
               <img className={style.tamanhoImg} src={ImgCard5} />
-              <h4>Sterna Café</h4>
-              <p>Cafeteria</p>
-              <p>
+              <h4 className={style.start}>Sterna Café</h4>
+              <p className={style.start}>Cafeteria</p>
+              <p className={style.start}>
                 <img className={style.tamanhoEstrela} src={ImgCard6} />
                 99 Avaliações
               </p>
@@ -95,7 +89,7 @@ export default () => {
           </div>
         </div>
         <div className={style.centralizaTexto2}>
-          <h1 className={style.corTexto}>
+          <h1 className={style.textoIta}>
             Os Melhores restaurantes para você!
           </h1>
         </div>
@@ -104,6 +98,7 @@ export default () => {
             <img src={ImgCard7} className={style.marginImgTop2} />
           </div>
         </div>
+        <h1 className={style.titulohist}>Um pouco de história</h1>
         <div className={style.bgWhite}>
           <p>
             Theodore Zeldin não era um cozinheiro,
@@ -143,13 +138,13 @@ export default () => {
           </p>
         </div>
         <div className={style.centralizaTexto}>
-          <h1 className={style.corTexto}>Drinks</h1>
+          <h1 className={style.textoIta}>Drinks</h1>
           <div className={style.flexRow}>
             <img src={ImgCard9} className={style.marginImgTop} />
           </div>
         </div>
         <div className={style.centralizaTexto}>
-          <h1 className={style.tituloSublinhado}>
+          <h1 className={style.textoIta}>
             Escolha sua culinária favorita
           </h1>
           <div className={style.cardEscolha}>
@@ -176,15 +171,14 @@ export default () => {
             <div>
               <h1>Brazilian Food</h1>
               <img src={ImgCard15} className={style.tamanhoPadraoImg} />
+              <p className={style.textcentral}>e muitas outras...</p>
             </div>
-          </div>
-          <div className={style.posicaoTxt}>
-            <h1>e muitas outras...</h1>
           </div>
         </div>
       </body>
       <Footer />
-    </>
-  );
+    </section>
+  )
 };
+
 
