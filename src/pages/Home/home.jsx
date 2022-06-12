@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from "../Home/home.module.css";
-import Header from "../Header/header";
+import Header from "../../components/Header/header";
 import ImgCard1 from "../../assents/img/imagem1.png";
 import ImgCard2 from "../../assents/img/salsa.png";
 import ImgCard3 from "../../assents/img/churros.png";
@@ -16,9 +16,9 @@ import ImgCard12 from "../../assents/img/Mexican_Food.jpg";
 import ImgCard13 from "../../assents/img/Arabian_Food.jpg";
 import ImgCard14 from "../../assents/img/Thai_Food.jpg";
 import ImgCard15 from "../../assents/img/Brazilian_Food.jpg";
-import Footer from "../Footer/footer";
+import Footer from "../../components/Footer/footer";
 import Animacao from "../../assents/Animacao/Animacao";
-// import Sobre from './components/Sobre/sobre'
+
 
 export default () => {
   const [animacao, setAnimacao] = useState(false);
@@ -26,7 +26,7 @@ export default () => {
     setAnimacao(true);
     setTimeout(() => {
       setAnimacao(false);
-    }, 10000);
+    }, 6000);
   }, []);
 
   return (

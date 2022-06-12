@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import style from "../Cadastro/cadastro.module.css";
 import { AuthContext } from "../../context/Auth";
 import Header from "../../components/Header/header";
-import Footer from "../Footer/footer";
+import Footer from "../../components/Footer/footer";
 
 const CadastroPage = () => {
   const { cadastro } = useContext(AuthContext);

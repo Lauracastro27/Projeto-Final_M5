@@ -1,13 +1,12 @@
 import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
-import Home from './components/Home/home'
+import Home from './pages/Home/home'
 import Login from "./pages/LoginPage/Login"
 import { AuthProvider, AuthContext } from "./context/Auth";
 import React, {useContext } from "react";
-import Cadastro from './components/Cadastro/cadastro'
+import Cadastro from './pages/Cadastro/cadastro'
 import UsuarioPage from './pages/Registro/UsuarioPage'
 import Produtos from './pages/Usuario/Produtos';
-import Sobre from './components/Sobre/sobre'
-import Header from "./components/Header/header";
+import Sobre from './pages/Sobre/sobre'
 
 const AppRoutes = () =>{
    
